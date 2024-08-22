@@ -2,13 +2,10 @@ import React from "react";
 import {
     AiOutlineHome,
     AiOutlineFundProjectionScreen,
-    AiFillStar,
 } from "react-icons/ai";
-import { FiUser, FiFileText } from "react-icons/fi";
-import { DiGitBranch } from "react-icons/di";
-
-import { Link } from "react-router-dom";
+import { FiUser } from "react-icons/fi";
 import { IoMdContact } from 'react-icons/io';
+import { Link as ScrollLink } from 'react-scroll';
 
 function MobileNav({ showNav, setShowNav }) {
     return (
@@ -19,54 +16,61 @@ function MobileNav({ showNav, setShowNav }) {
                     : "fixed h-0 bg-gradient-to-r from-purple-900 to-violet-900  w-full top-[68px] left-0 rounded-b-md  z-50 transition-all duration-[500ms] overflow-hidden"
             }
         >
-            <div className=" block items-center justify-center text-white">
-                <ul className="flex gap-8 flex-col mt-10  ">
+            <div className="block items-center justify-center text-white">
+                <ul className="flex gap-8 flex-col mt-10">
                     <li className="relative group">
-                        <Link
-                            to={"/"}
+                        <ScrollLink
+                            to="hero"
+                            smooth={true}
+                            duration={500}
                             className="flex gap-1 items-center justify-center cursor-pointer text-base font-bold relative"
                             onClick={() => setShowNav(false)}
                         >
                             <AiOutlineHome fontSize={20} />
-                            <span className="">Home</span>
-                        </Link>
+                            <span>Home</span>
+                        </ScrollLink>
                     </li>
                     <li className="relative group">
-                        <Link
-                            to={"/about"}
+                        <ScrollLink
+                            to="skills"
+                            smooth={true}
+                            duration={500}
                             className="flex gap-1 items-center justify-center cursor-pointer text-base font-bold relative"
                             onClick={() => setShowNav(false)}
                         >
                             <FiUser fontSize={20} />
-                            <span className="">About</span>
-                        </Link>
+                            <span>Skills</span>
+                        </ScrollLink>
                     </li>
                     <li className="relative group">
-                        <Link
-                            to={"/projects"}
+                        <ScrollLink
+                            to="projects"
+                            smooth={true}
+                            duration={500}
                             className="flex gap-1 items-center justify-center cursor-pointer text-base font-bold relative"
                             onClick={() => setShowNav(false)}
                         >
                             <AiOutlineFundProjectionScreen fontSize={20} />
-                            <span className="">Projects</span>
-                        </Link>
+                            <span>Projects</span>
+                        </ScrollLink>
                     </li>
                     <li className="relative group">
-                        <Link
-                            to={"/"}
+                        <ScrollLink
+                            to="contact"
+                            smooth={true}
+                            duration={500}
                             className="flex gap-1 items-center justify-center cursor-pointer text-base font-bold relative"
                             onClick={() => setShowNav(false)}
                         >
                             <IoMdContact fontSize={20} />
-                            <span className="">Contact</span>
-                        </Link>
+                            <span>Contact</span>
+                        </ScrollLink>
                     </li>
                 </ul>
-
-
             </div>
         </div>
     );
 }
 
 export default MobileNav;
+
