@@ -7,7 +7,7 @@ function Project() {
             <div className="z-20 flex items-center justify-center gap-6 flex-wrap max-w-6xl">
                 <ProjectCard
                     name={"GYM Website"}
-                    image={"/public/images/pro1.png.png"}
+                    image={"/images/pro1.png"}
                     about={
                         "It is built on React, is backend using mongodb. And it is also mobile responsive and use FireBase google when logging in"
                     }

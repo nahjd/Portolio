@@ -11,7 +11,7 @@ function ProjectCard({ name, about, image, demo, code, note }) {
                         <img
                             className="object-cover object-center rounded"
                             alt="project"
-                            src={"/public/images/pro1.png.png"}
+                            src={image}
                         />
                     </Tilt>
                 </div>
