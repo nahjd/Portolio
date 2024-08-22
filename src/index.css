@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #351e5f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4e0097;
+  border-radius: 5px;
+  border: 0.1px solid #4e0097;
+}
+.react-pdf__Page__textContent {
+  background: transparent !important;
+  display: none !important;
+}

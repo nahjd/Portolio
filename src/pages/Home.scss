@@ -1,0 +1,35 @@
+#stars {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  //   height: 100vh;
+  cursor: pointer; // Add this line to make the cursor a pointer over the entire star field
+}
+
+.star {
+  height: auto;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  animation: twinkle 10s infinite ease-in-out, move 15s linear infinite;
+  cursor: pointer; // Add this line to ensure the cursor is a pointer over individual stars
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
