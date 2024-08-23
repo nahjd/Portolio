@@ -25,8 +25,9 @@ const Home = () => {
         createStars(800);
     }, []);
 
+
     return (
-        <div id='stars' style={{ position: 'relative', overflow: 'hidden' }}>
+        <div id='stars'>
             <section id="hero">
                 <Hero />
             </section>

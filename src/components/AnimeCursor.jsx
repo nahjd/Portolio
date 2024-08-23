@@ -13,11 +13,11 @@ function AnimeCursor() {
                 hasBlendMode={true}
                 innerStyle={{
                     backgroundColor: "#fff",
-                    cursor: "pointer" // Ensure the custom cursor behaves like a pointer
+                    cursor: "pointer"
                 }}
                 outerStyle={{
                     border: "3px solid #ccc",
-                    cursor: "pointer" // Ensure the custom cursor behaves like a pointer
+                    cursor: "pointer"
                 }}
             />
         </div>

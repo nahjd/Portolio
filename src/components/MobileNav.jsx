@@ -12,12 +12,12 @@ function MobileNav({ showNav, setShowNav }) {
         <div
             className={
                 showNav
-                    ? "fixed h-60 bg-gradient-to-r from-purple-900 to-violet-900  w-full top-[68px] left-0 rounded-b-md border-2 border-t-0 border-purple-700 z-50 transition-all duration-[500ms] overflow-hidden"
+                    ? "fixed h-50 bg-gradient-to-r from-purple-900 to-violet-900  w-full top-[68px] left-0 rounded-b-md  border-t-0 border-purple-700 z-50 transition-all duration-[500ms] overflow-hidden"
                     : "fixed h-0 bg-gradient-to-r from-purple-900 to-violet-900  w-full top-[68px] left-0 rounded-b-md  z-50 transition-all duration-[500ms] overflow-hidden"
             }
         >
             <div className="block items-center justify-center text-white">
-                <ul className="flex gap-8 flex-col mt-10">
+                <ul className="flex gap-5 flex-col mt-2">
                     <li className="relative group">
                         <ScrollLink
                             to="hero"
