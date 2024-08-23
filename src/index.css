@@ -1,38 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Global scrollbars'ı gizleme */
+
+/* Hide global scrollbars */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ensure that scrollbars are hidden in all major browsers */
 body {
-  overflow: auto; /* Sayfa üzerindeki scrollbars'ı yeniden aktif hale getirir */
-}
-/* Global scrollbars'ı gizleme */
-body.no-scroll {
-  overflow: hidden; /* Sayfa scrollbars'ını gizler */
+  overflow: hidden; /* Hide the global scrollbar */
 }
 
-/* Scroll yapılacak bölümler için */
-.scrollable {
-  overflow-y: scroll; /* Yalnızca dikey scroll sağlar */
-}
+/* Custom scrollbar for specific elements */
+/* .scroll-indicator {
+  width: 10px;
+  height: 100%; /* Adjust height based on needs */
+/* overflow-y: scroll; */
+/* } */
 
-/* Özellikle scroll yapılacak bölümler için overflow ayarları */
-.scrollable {
-  overflow-y: scroll; /* Yalnızca dikey scroll sağlar */
-}
+/* .scroll-indicator::-webkit-scrollbar {
+  width: 6px; /* Adjust width for the scroll indicators */
 
-/* Scroll indikatörleri (isteğe bağlı) */
-.scrollable::-webkit-scrollbar {
-  width: 8px; /* Scrollbar genişliği */
-}
+/* 
+.scroll-indicator::-webkit-scrollbar-track {
+  background: #351e5f;
+} */
 
-.scrollable::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Scrollbar arka planı */
-}
+/* .scroll-indicator::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 5px;
+  border: 0.1px solid #4e0097;
+} */
 
-.scrollable::-webkit-scrollbar-thumb {
-  background: #888; /* Scrollbar parmağı */
-}
-
-.scrollable::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Scrollbar parmağı hover efekti */
-}
+/* Ensure PDF text content does not show */
+/* .react-pdf__Page__textContent {
+  background: transparent !important;
+  display: none !important;
+} */

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
     AiOutlineHome,
     AiOutlineFundProjectionScreen,
@@ -8,6 +8,14 @@ import { IoMdContact } from 'react-icons/io';
 import { Link as ScrollLink } from 'react-scroll';
 
 function MobileNav({ showNav, setShowNav }) {
+    useEffect(() => {
+        // Sayfa kaydırmasını yönet
+        document.body.style.overflow = showNav ? 'hidden' : 'auto';
+        return () => {
+            document.body.style.overflow = 'auto'; // Temizleme
+        };
+    }, [showNav]);
+
     return (
         <div
             className={
@@ -73,4 +81,3 @@ function MobileNav({ showNav, setShowNav }) {
 }
 
 export default MobileNav;
-
