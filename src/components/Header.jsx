@@ -101,7 +101,7 @@ function Header() {
             {/* Conditionally render the social media icons based on showNav and scroll */}
             {!showNav && scroll === 0 && (
                 <div className="fixed top-1/2 left-4 transform -translate-y-1/2 text-white">
-                    <ul className="flex flex-col items-start space-y-10 text-xl mt-14">
+                    <ul className="flex flex-col items-start space-y-8 text-xl mt-11">
                         <li>
                             <a
                                 href="https://github.com/nahjd"
