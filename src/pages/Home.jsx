@@ -1,11 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Hero from '../components/Hero';
 import "./Home.scss";
 import Project from '../pages/Project';
 import Skills from '../pages/Skills';
-import Contact from '../pages/Contact'
+import Contact from '../pages/Contact';
 
 const Home = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        // Sayfa yüklenirken 2 saniyelik bir yükleyici süresi ayarla
+        const timer = setTimeout(() => setLoading(false), 2000); // 2 saniye
+        return () => clearTimeout(timer); // Temizleme işlevi
+    }, []);
 
     useEffect(() => {
         const createStars = (count) => {
@@ -25,21 +32,28 @@ const Home = () => {
         createStars(800);
     }, []);
 
-
     return (
         <div id='stars'>
-            <section id="hero">
-                <Hero />
-            </section>
-            <section id="skills">
-                <Skills />
-            </section>
-            <section id="projects">
-                <Project />
-            </section>
-            <section id="contact">
-                <Contact />
-            </section>
+            {loading ? (
+                <div className="loader-wrapper">
+                    <div className="loader">Loading...</div>
+                </div>
+            ) : (
+                <>
+                    <section id="hero">
+                        <Hero />
+                    </section>
+                    <section id="skills">
+                        <Skills />
+                    </section>
+                    <section id="projects">
+                        <Project />
+                    </section>
+                    <section id="contact">
+                        <Contact />
+                    </section>
+                </>
+            )}
         </div>
     );
 };

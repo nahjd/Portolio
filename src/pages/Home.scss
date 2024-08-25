@@ -33,3 +33,36 @@
     transform: translateY(-100vh);
   }
 }
+
+/* HTML: <div class="loader"></div> */
+/* Loader Stili */
+.loader-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(27, 39, 53, 0.8); // Yükleyici arka planı için renk
+  z-index: 1000; // Diğer içeriğin üstünde
+}
+
+.loader {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  color: #0000;
+  background: linear-gradient(90deg, #c02942 calc(50% + 0.5ch), #000 0)
+    right/calc(200% + 1ch) 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: l7 2s infinite steps(11);
+}
+
+@keyframes l7 {
+  to {
+    background-position: left;
+  }
+}
