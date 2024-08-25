@@ -2,39 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Hide global scrollbars */
 body::-webkit-scrollbar {
   display: none;
 }
 
-/* Ensure that scrollbars are hidden in all major browsers */
 body {
-  overflow: hidden; /* Hide the global scrollbar */
+  overflow: hidden;
 }
-
-/* Custom scrollbar for specific elements */
-/* .scroll-indicator {
-  width: 10px;
-  height: 100%; /* Adjust height based on needs */
-/* overflow-y: scroll; */
-/* } */
-
-/* .scroll-indicator::-webkit-scrollbar {
-  width: 6px; /* Adjust width for the scroll indicators */
-
-/* 
-.scroll-indicator::-webkit-scrollbar-track {
-  background: #351e5f;
-} */
-
-/* .scroll-indicator::-webkit-scrollbar-thumb {
-  background-color: red;
-  border-radius: 5px;
-  border: 0.1px solid #4e0097;
-} */
-
-/* Ensure PDF text content does not show */
-/* .react-pdf__Page__textContent {
-  background: transparent !important;
-  display: none !important;
-} */

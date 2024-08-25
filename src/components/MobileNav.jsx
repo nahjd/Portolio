@@ -9,10 +9,10 @@ import { Link as ScrollLink } from 'react-scroll';
 
 function MobileNav({ showNav, setShowNav }) {
     useEffect(() => {
-        // Sayfa kaydırmasını yönet
+
         document.body.style.overflow = showNav ? 'hidden' : 'auto';
         return () => {
-            document.body.style.overflow = 'auto'; // Temizleme
+            document.body.style.overflow = 'auto';
         };
     }, [showNav]);
 
