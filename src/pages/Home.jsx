@@ -9,9 +9,9 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Sayfa yüklenirken 2 saniyelik bir yükleyici süresi ayarla
-        const timer = setTimeout(() => setLoading(false), 2000); // 2 saniye
-        return () => clearTimeout(timer); // Temizleme işlevi
+
+        const timer = setTimeout(() => setLoading(false), 2000);
+        return () => clearTimeout(timer);
     }, []);
 
     useEffect(() => {

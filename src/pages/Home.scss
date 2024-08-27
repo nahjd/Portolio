@@ -34,8 +34,6 @@
   }
 }
 
-/* HTML: <div class="loader"></div> */
-/* Loader Stili */
 .loader-wrapper {
   position: relative;
   top: 0;
@@ -45,8 +43,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(27, 39, 53, 0.8); // Yükleyici arka planı için renk
-  z-index: 1000; // Diğer içeriğin üstünde
+  background: rgba(27, 39, 53, 0.8);
+  z-index: 1000;
 }
 
 .loader {
