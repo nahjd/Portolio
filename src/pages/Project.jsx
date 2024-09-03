@@ -14,6 +14,15 @@ function Project() {
                     demo={"https://gymnako.vercel.app/"}
                     code={"https://github.com/nahjd/GYM.git"}
                 />
+                <ProjectCard
+                    name={"Social Media Website"}
+                    image={"/images/pro2.png"}
+                    about={
+                        "It is built on React+TypeScript, backend using MONGODB, Express JS. It is also mobile responsive and not fully finished 😉"
+                    }
+                    demo={"https://social-sebeke-nako.vercel.app"}
+                    code={""}
+                />
 
             </div>
         </div>

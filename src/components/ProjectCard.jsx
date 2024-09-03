@@ -22,7 +22,7 @@ function ProjectCard({ name, about, image, demo, code, note }) {
                     <p className="mb-8 leading-relaxed lg:pr-28">{about}</p>
                     {note && (
                         <p className="mb-5 leading-relaxed lg:pr-28 text-red-700 text-sm font-medium">
-                            {note}{" "}
+                            {note}
                             <a
                                 href="https://fash-cave.onrender.com/"
                                 target="_blank"
