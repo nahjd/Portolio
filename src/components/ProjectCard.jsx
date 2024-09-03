@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
 import Tilt from "react-parallax-tilt";
+
 function ProjectCard({ name, about, image, demo, code, note }) {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
-        <section className="text-gray-200 body-font  rounded-lg">
+        <section className="text-gray-200 body-font rounded-lg">
             <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                    {/* <Tilt> */}
+                <div className="lg:max-w-lg lg:w-full md:w-1/3 w-5/6 mb-10 md:mb-0">
                     <img
-                        className="object-cover object-center rounded"
+                        className="object-cover object-center rounded cursor-pointer"
                         alt="project"
                         src={image}
+                        onClick={() => setIsModalOpen(true)}
                     />
-                    {/* </Tilt> */}
                 </div>
                 <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center ">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
@@ -49,6 +51,25 @@ function ProjectCard({ name, about, image, demo, code, note }) {
                     </div>
                 </div>
             </div>
+
+            {/* Modal */}
+            {isModalOpen && (
+                <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+                    <div className="relative">
+                        <img
+                            className="object-cover object-center rounded"
+                            alt="project"
+                            src={image}
+                        />
+                        <button
+                            className="absolute top-2 right-2 text-white bg-red-500 rounded-full p-2"
+                            onClick={() => setIsModalOpen(false)}
+                        >
+                            X
+                        </button>
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
