@@ -59,7 +59,7 @@ function Project() {
                         name={"Social Media Website"}
                         image={"/images/pro2.png"}
                         about={
-                            "It is built on React+TypeScript, backend using MONGODB, Express JS. It is also mobile responsive and not fully finished 😉"
+                            "It is built on React+TypeScript, backend using MONGODB, Express JS. It is also mobile responsive and not fully finished 🌞"
                         }
                         demo={"https://social-sebeke-nako.vercel.app"}
                         code={""}
@@ -68,16 +68,29 @@ function Project() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <ProjectCard
-                        name={"Another Project"}
+                        name={"Social Media Website"}
+                        image={"/images/pro4.png"}
+                        about={
+                            "Dark Mode to social media website...🌛"
+                        }
+                        demo={"https://example.com"}
+                        code={""}
+                        onImageClick={() => handleOpenModal("/images/pro4.png")}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <ProjectCard
+                        name={"Social Media Website"}
                         image={"/images/pro3.png"}
                         about={
-                            "A brief description of this project."
+                            "Login to social media website...ℳ"
                         }
                         demo={"https://example.com"}
                         code={""}
                         onImageClick={() => handleOpenModal("/images/pro3.png")}
                     />
                 </SwiperSlide>
+
             </Swiper>
 
             {/* Fullscreen Modal */}
