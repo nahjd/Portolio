@@ -73,7 +73,7 @@ function Project() {
                         about={
                             "Dark Mode to social media website...🌛"
                         }
-                        demo={"https://example.com"}
+                        demo={"https://social-sebeke-nako.vercel.app"}
                         code={""}
                         onImageClick={() => handleOpenModal("/images/pro4.png")}
                     />
@@ -85,7 +85,7 @@ function Project() {
                         about={
                             "Login to social media website...ℳ"
                         }
-                        demo={"https://example.com"}
+                        demo={"https://social-sebeke-nako.vercel.app"}
                         code={""}
                         onImageClick={() => handleOpenModal("/images/pro3.png")}
                     />
