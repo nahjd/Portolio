@@ -43,17 +43,19 @@ function Project() {
                 style={{ padding: "20px", height: "100%", width: "100%" }}
             >
 
-                <ProjectCard
-                    name={"GYM Website"}
-                    image={"/images/pro1.png"}
-                    about={
-                        "It is built on React, is backend using mongodb. And it is also mobile responsive and use FireBase google when logging in"
-                    }
-                    demo={"https://gymnako.vercel.app/"}
-                    code={"https://github.com/nahjd/GYM.git"}
-                    onImageClick={() => handleOpenModal("/images/pro1.png")}
-                />
 
+                <SwiperSlide>
+                    <ProjectCard
+                        name={"Social Media Website"}
+                        image={"/images/pro3.png"}
+                        about={
+                            "Login to social media website...ℳ"
+                        }
+                        demo={"https://social-sebeke-nako.vercel.app"}
+                        code={""}
+                        onImageClick={() => handleOpenModal("/images/pro3.png")}
+                    />
+                </SwiperSlide>
                 <SwiperSlide>
                     <ProjectCard
                         name={"Social Media Website"}
@@ -78,21 +80,68 @@ function Project() {
                         onImageClick={() => handleOpenModal("/images/pro4.png")}
                     />
                 </SwiperSlide>
-                <SwiperSlide>
-                    <ProjectCard
-                        name={"Social Media Website"}
-                        image={"/images/pro3.png"}
-                        about={
-                            "Login to social media website...ℳ"
-                        }
-                        demo={"https://social-sebeke-nako.vercel.app"}
-                        code={""}
-                        onImageClick={() => handleOpenModal("/images/pro3.png")}
-                    />
-                </SwiperSlide>
+
 
             </Swiper>
 
+            {/* GYM */}
+            <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 4000,
+                    disableOnInteraction: false,
+                }}
+                spaceBetween={50}
+                slidesPerView={1}
+                // navigation
+                pagination={{ clickable: true }}
+                className="max-w-6xl mx-auto"
+                style={{ padding: "20px", height: "100%", width: "100%" }}
+            >
+                <SwiperSlide>
+                    <ProjectCard
+                        name={"GYM Website"}
+                        image={"/images/gym1.png"}
+                        about={
+                            "It is built on React, is backend using mongodb. And it is also mobile responsive and use FireBase google when logging in"
+                        }
+                        demo={"https://gymnako.vercel.app/"}
+                        code={"https://github.com/nahjd/GYM.git"}
+                        onImageClick={() => handleOpenModal("/images/gym1.png")}
+                    />
+                </SwiperSlide>
+
+
+                <SwiperSlide>
+                    <ProjectCard
+                        name={"GYM Website"}
+                        image={"/images/pro1.png"}
+                        about={
+                            "It is built on React, is backend using mongodb. And it is also mobile responsive and use FireBase google when logging in"
+                        }
+                        demo={"https://gymnako.vercel.app/"}
+                        code={"https://github.com/nahjd/GYM.git"}
+                        onImageClick={() => handleOpenModal("/images/pro1.png")}
+                    />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <ProjectCard
+                        name={"GYM Website"}
+                        image={"/images/gym2.png"}
+                        about={
+                            "It is built on React, is backend using mongodb. And it is also mobile responsive and use FireBase google when logging in"
+                        }
+                        demo={"https://gymnako.vercel.app/"}
+                        code={"https://github.com/nahjd/GYM.git"}
+                        onImageClick={() => handleOpenModal("/images/gym2.png")}
+                    />
+                </SwiperSlide>
+
+
+
+            </Swiper>
             {/* Fullscreen Modal */}
             {modalImage && (
                 <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
