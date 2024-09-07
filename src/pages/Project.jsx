@@ -118,7 +118,7 @@ function Project() {
                         name={"GYM Website"}
                         image={"/images/pro1.png"}
                         about={
-                            "It is built on React, is backend using mongodb. And it is also mobile responsive and use FireBase google when logging in"
+                            "It is the home page. When you click on the selected places in the Navbar, it scrolls down and somewhere you enter the Admin login section, it asks for a password and code."
                         }
                         demo={"https://gymnako.vercel.app/"}
                         code={"https://github.com/nahjd/GYM.git"}
@@ -131,7 +131,7 @@ function Project() {
                         name={"GYM Website"}
                         image={"/images/gym2.png"}
                         about={
-                            "It is built on React, is backend using mongodb. And it is also mobile responsive and use FireBase google when logging in"
+                            "Cards from the database have a basket, wishlist, and details. Basket also works with check out <stripe> 🎴"
                         }
                         demo={"https://gymnako.vercel.app/"}
                         code={"https://github.com/nahjd/GYM.git"}
