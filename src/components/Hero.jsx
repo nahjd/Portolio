@@ -6,7 +6,7 @@ function Hero() {
         <div className="h-screen flex items-center justify-center flex-col lg:flex-row  overflow-hidden">
             <div className="w-full lg:w-1/2 flex items-center justify-center flex-col text-center">
                 <h3 className="text-white text-xl lg:text-2xl mb-0 flex items-center justify-center gap-0 mb-15">
-                    Hii I'M
+                    Hi I'M
                     <img
                         style={{ width: "60px", height: "60px", marginBottom: '15px' }}
                         src="https://media.tenor.com/QpTLQALtdskAAAAi/hii-wave.gif"
