@@ -9,7 +9,7 @@ function Type() {
                 loop={0}
                 cursor
                 cursorStyle="|"
-                typeSpeed={70}
+                typeSpeed={65}
                 deleteSpeed={50}
                 delaySpeed={1000}
             />
