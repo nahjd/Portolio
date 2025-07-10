@@ -52,7 +52,7 @@ function Project() {
                             "Login to social media website...ℳ"
                         }
                         demo={"https://social-sebeke-nako.vercel.app"}
-                        code={""}
+                        code={"https://github.com/nahjd/social-front.git"}
                         onImageClick={() => handleOpenModal("/images/pro3.png")}
                     />
                 </SwiperSlide>
@@ -64,7 +64,7 @@ function Project() {
                             "It is built on React+TypeScript, backend using MONGODB, Express JS. It is also mobile responsive and not fully finished 🌞"
                         }
                         demo={"https://social-sebeke-nako.vercel.app"}
-                        code={""}
+                        code={"https://github.com/nahjd/social-front.git"}
                         onImageClick={() => handleOpenModal("/images/pro2.png")}
                     />
                 </SwiperSlide>
@@ -73,10 +73,10 @@ function Project() {
                         name={"Social Media Website"}
                         image={"/images/pro4.png"}
                         about={
-                            "Dark Mode to social media website...🌛"
+                            "Dark Mode to social media website...🌛 BackEnd code ↙️"
                         }
                         demo={"https://social-sebeke-nako.vercel.app"}
-                        code={""}
+                        code={"https://github.com/nahjd/social-back.git"}
                         onImageClick={() => handleOpenModal("/images/pro4.png")}
                     />
                 </SwiperSlide>
